@@ -1,0 +1,446 @@
+\initial {$}
+\entry {\code {$}}{105}
+\initial {%}
+\entry {\code {\xeatspaces {%}}}{107}
+\initial {'}
+\entry {\code {'}}{123}
+\initial {+}
+\entry {\code {+}}{105}
+\initial {,}
+\entry {\code {,}}{105}
+\initial {-}
+\entry {\code {-}}{106}
+\initial {.}
+\entry {\code {.}}{101}
+\initial {/}
+\entry {\code {\xeatspaces {/}}}{103}
+\initial {:}
+\entry {\code {:}}{105}
+\initial {;}
+\entry {\code {;}}{79}
+\initial {<}
+\entry {\code {\xeatspaces {<}}}{63}
+\entry {\code {<}}{68}
+\entry {\code {\xeatspaces {<}}}{91}
+\entry {\code {<TAB>}}{17}
+\initial {>}
+\entry {\code {\xeatspaces {>}}}{63}
+\entry {\code {>}}{68}
+\entry {\code {\xeatspaces {>}}}{91}
+\entry {\code {>}}{106}
+\initial {?}
+\entry {\code {?}}{204}
+\initial {[}
+\entry {\code {[}}{102, 104}
+\initial {]}
+\entry {\code {]}}{104}
+\initial {^}
+\entry {\code {^}}{123}
+\initial {_}
+\entry {\code {_}}{123}
+\initial {`}
+\entry {\code {`}}{123}
+\initial {{\tt \char 123}}
+\entry {\code {{\tt \char 123}}}{104}
+\initial {{\tt \char 125}}
+\entry {\code {{\tt \char 125}}}{104}
+\initial {{\tt \indexbackslash }}
+\entry {\code {{\tt \backslashcurfont }{\tt \backslashcurfont }}}{104}
+\initial {A}
+\entry {\code {\xeatspaces {a}}}{63}
+\entry {\code {a}}{105}
+\entry {\code {A}}{101}
+\initial {B}
+\entry {\code {b}}{101}
+\entry {\code {\xeatspaces {B}}}{107}
+\initial {C}
+\entry {\code {\xeatspaces {c}}}{108}
+\entry {\code {\xeatspaces {C}}}{108}
+\entry {\code {\xeatspaces {C-#}}}{29}
+\entry {\code {\xeatspaces {C-'}}}{90}
+\entry {\code {C-,}}{90}
+\entry {\code {C-_}}{104}
+\entry {\code {\xeatspaces {C-0 C-c C-w}}}{88}
+\entry {\code {C-c !}}{66}
+\entry {\code {\xeatspaces {C-c #}}}{52}
+\entry {\code {\xeatspaces {C-c $}}}{88}
+\entry {\code {C-c %}}{37}
+\entry {\code {C-c &}}{37}
+\entry {\code {\xeatspaces {C-c '}}}{28}
+\entry {\code {C-c '}}{119, 154}
+\entry {\code {\xeatspaces {C-c '}}}{186}
+\entry {\code {\xeatspaces {C-c *}}}{9}
+\entry {\code {C-c *}}{13}
+\entry {\code {\xeatspaces {C-c *}}}{29}
+\entry {\code {C-c +}}{19}
+\entry {\code {\kbd {C-c ,}}}{49}
+\entry {\code {C-c -}}{13, 18}
+\entry {\code {C-c .}}{66}
+\entry {\code {\xeatspaces {C-c /}}}{10}
+\entry {\code {C-c /}}{187}
+\entry {\code {\xeatspaces {C-c / a}}}{70}
+\entry {\code {\xeatspaces {C-c / b}}}{70}
+\entry {\code {\xeatspaces {C-c / d}}}{70}
+\entry {\code {\xeatspaces {C-c / m}}}{56, 59}
+\entry {\code {\xeatspaces {C-c / p}}}{59}
+\entry {\code {\xeatspaces {C-c / r}}}{10}
+\entry {\code {C-c / t}}{41}
+\entry {\code {C-c ;}}{117}
+\entry {\code {C-c <}}{66}
+\entry {\code {C-c =}}{27}
+\entry {\code {C-c >}}{66}
+\entry {\code {C-c ?}}{27}
+\entry {\code {\xeatspaces {C-c [}}}{90}
+\entry {\code {\xeatspaces {C-c ]}}}{90}
+\entry {\code {\xeatspaces {C-c ^}}}{9}
+\entry {\code {C-c ^}}{14, 18}
+\entry {\code {C-c `}}{19}
+\entry {\code {C-c {\tt \char 123}}}{27, 123}
+\entry {\code {C-c {\tt \char 125}}}{27, 28}
+\entry {\code {\xeatspaces {C-c {\tt \backslashcurfont }}}}{59}
+\entry {\code {\xeatspaces {C-c {\tt \backslashcurfont }{\tt \backslashcurfont }}}}{56}
+\entry {\code {C-c |}}{17}
+\entry {\code {\xeatspaces {C-c |}}}{20}
+\entry {\code {\xeatspaces {C-c ~}}}{186}
+\entry {\code {C-c a !}}{98}
+\entry {\code {\xeatspaces {C-c a #}}}{98}
+\entry {\code {C-c a ?}}{204}
+\entry {\code {\xeatspaces {C-c a a}}}{92}
+\entry {\code {C-c a C}}{109}
+\entry {\code {\xeatspaces {C-c a e}}}{113}
+\entry {\code {\xeatspaces {C-c a L}}}{97}
+\entry {\code {\xeatspaces {C-c a m}}}{56, 59, 95}
+\entry {\code {\xeatspaces {C-c a M}}}{56, 59, 95}
+\entry {\code {\xeatspaces {C-c a s}}}{97}
+\entry {\code {C-c a t}}{41}
+\entry {\code {\xeatspaces {C-c a t}}}{94}
+\entry {\code {\xeatspaces {C-c a T}}}{94}
+\entry {\code {\xeatspaces {C-c c}}}{80}
+\entry {\code {\xeatspaces {C-c c C}}}{81}
+\entry {\code {C-c C-*}}{13}
+\entry {\code {C-c C-a}}{85, 106}
+\entry {\code {C-c C-a a}}{85}
+\entry {\code {C-c C-a c}}{85}
+\entry {\code {\xeatspaces {C-c C-a d}}}{86}
+\entry {\code {\xeatspaces {C-c C-a D}}}{86}
+\entry {\code {\xeatspaces {C-c C-a f}}}{86}
+\entry {\code {\xeatspaces {C-c C-a F}}}{86}
+\entry {\code {\xeatspaces {C-c C-a i}}}{86}
+\entry {\code {C-c C-a l}}{85}
+\entry {\code {C-c C-a m}}{85}
+\entry {\code {C-c C-a n}}{85}
+\entry {\code {\xeatspaces {C-c C-a o}}}{86}
+\entry {\code {\xeatspaces {C-c C-a O}}}{86}
+\entry {\code {\xeatspaces {C-c C-a s}}}{86}
+\entry {\code {C-c C-a z}}{85}
+\entry {\code {C-c C-b}}{7}
+\entry {\code {\xeatspaces {C-c C-b}}}{136}
+\entry {\code {C-c C-c}}{13, 16, 17}
+\entry {\code {\xeatspaces {C-c C-c}}}{28}
+\entry {\code {C-c C-c}}{51}
+\entry {\code {\xeatspaces {C-c C-c}}}{53, 58, 63, 64, 73, 74, 80}
+\entry {\code {C-c C-c}}{122, 156, 174, 182, 186}
+\entry {\code {\xeatspaces {C-c C-c c}}}{58}
+\entry {\code {\xeatspaces {C-c C-c d}}}{58}
+\entry {\code {\xeatspaces {C-c C-c D}}}{58}
+\entry {\code {\xeatspaces {C-c C-c s}}}{58}
+\entry {\code {\xeatspaces {C-c C-d}}}{70}
+\entry {\code {C-c C-d}}{106}
+\entry {\code {C-c C-e}}{126}
+\entry {\code {C-c C-e a}}{126}
+\entry {\code {C-c C-e A}}{126}
+\entry {\code {\xeatspaces {C-c C-e b}}}{127}
+\entry {\code {\xeatspaces {C-c C-e c}}}{144}
+\entry {\code {\xeatspaces {C-c C-e d}}}{133}
+\entry {\code {\xeatspaces {C-c C-e D}}}{137}
+\entry {\code {\xeatspaces {C-c C-e E}}}{151}
+\entry {\code {\xeatspaces {C-c C-e F}}}{151}
+\entry {\code {\xeatspaces {C-c C-e h}}}{127}
+\entry {\code {\xeatspaces {C-c C-e H}}}{127}
+\entry {\code {\xeatspaces {C-c C-e i}}}{144}
+\entry {\code {\xeatspaces {C-c C-e I}}}{144}
+\entry {\code {\xeatspaces {C-c C-e j}}}{141}
+\entry {\code {\xeatspaces {C-c C-e J}}}{141}
+\entry {\code {\xeatspaces {C-c C-e l}}}{133}
+\entry {\code {\xeatspaces {C-c C-e L}}}{133}
+\entry {\code {\xeatspaces {C-c C-e m}}}{143}
+\entry {\code {C-c C-e n}}{126}
+\entry {\code {\xeatspaces {C-c C-e N}}}{127}
+\entry {\code {\xeatspaces {C-c C-e o}}}{140}
+\entry {\code {\xeatspaces {C-c C-e O}}}{140}
+\entry {\code {\xeatspaces {C-c C-e p}}}{133}
+\entry {\code {\xeatspaces {C-c C-e P}}}{151}
+\entry {\code {\xeatspaces {C-c C-e R}}}{127}
+\entry {\code {\xeatspaces {C-c C-e t}}}{124}
+\entry {\code {\xeatspaces {C-c C-e u}}}{127}
+\entry {\code {\xeatspaces {C-c C-e U}}}{127}
+\entry {\code {C-c C-e v}}{10, 126}
+\entry {\code {\xeatspaces {C-c C-e V}}}{137}
+\entry {\code {\xeatspaces {C-c C-e v D}}}{138}
+\entry {\code {\xeatspaces {C-c C-e v x}}}{143}
+\entry {\code {\xeatspaces {C-c C-e x}}}{143}
+\entry {\code {\xeatspaces {C-c C-e X}}}{151}
+\entry {\code {C-c C-f}}{7}
+\entry {\code {C-c C-j}}{7}
+\entry {\code {\xeatspaces {C-c C-k}}}{6, 81}
+\entry {\code {\xeatspaces {C-c C-l}}}{36}
+\entry {\code {C-c C-n}}{7}
+\entry {\code {C-c C-o}}{16, 37, 66, 101, 174}
+\entry {\code {C-c C-p}}{7}
+\entry {\code {\xeatspaces {C-c C-q}}}{28, 53}
+\entry {\code {\xeatspaces {C-c C-r}}}{6, 28}
+\entry {\code {\xeatspaces {C-c C-s}}}{70}
+\entry {\code {C-c C-s}}{106}
+\entry {\code {C-c C-t}}{41}
+\entry {\code {\xeatspaces {C-c C-t}}}{73}
+\entry {\code {C-c C-u}}{7}
+\entry {\code {C-c C-v a}}{174}
+\entry {\code {C-c C-v b}}{174}
+\entry {\code {C-c C-v C-a}}{174}
+\entry {\code {C-c C-v C-b}}{174}
+\entry {\code {C-c C-v C-f}}{174}
+\entry {\code {C-c C-v C-l}}{174}
+\entry {\code {C-c C-v C-p}}{174}
+\entry {\code {C-c C-v C-s}}{174}
+\entry {\code {C-c C-v C-t}}{174}
+\entry {\code {C-c C-v C-z}}{174}
+\entry {\code {C-c C-v f}}{174}
+\entry {\code {C-c C-v g}}{174}
+\entry {\code {C-c C-v h}}{174}
+\entry {\code {C-c C-v i}}{157}
+\entry {\code {C-c C-v l}}{174}
+\entry {\code {C-c C-v p}}{174}
+\entry {\code {C-c C-v s}}{174}
+\entry {\code {C-c C-v t}}{155, 174}
+\entry {\code {C-c C-v z}}{174}
+\entry {\code {\xeatspaces {C-c C-w}}}{9, 80, 87}
+\entry {\code {C-c C-w}}{105}
+\entry {\code {C-c C-x ,}}{78}
+\entry {\code {\xeatspaces {C-c C-x -}}}{78}
+\entry {\code {\xeatspaces {C-c C-x .}}}{78}
+\entry {\code {C-c C-x ;}}{79}
+\entry {\code {\xeatspaces {C-c C-x <}}}{91}
+\entry {\code {\xeatspaces {C-c C-x >}}}{91, 103}
+\entry {\code {C-c C-x {\tt \backslashcurfont }}}{121}
+\entry {\code {\xeatspaces {C-c C-x 0}}}{78}
+\entry {\code {\xeatspaces {C-c C-x a}}}{89}
+\entry {\code {C-c C-x a}}{105}
+\entry {\code {\xeatspaces {C-c C-x A}}}{89}
+\entry {\code {C-c C-x A}}{105}
+\entry {\code {\xeatspaces {C-c C-x b}}}{6}
+\entry {\code {C-c C-x b}}{101}
+\entry {\code {\xeatspaces {C-c C-x c}}}{9}
+\entry {\code {\xeatspaces {C-c C-x C-a}}}{88}
+\entry {\code {C-c C-x C-a}}{105}
+\entry {\code {C-c C-x C-b}}{51}
+\entry {\code {C-c C-x C-c}}{62}
+\entry {\code {\xeatspaces {C-c C-x C-c}}}{103, 113}
+\entry {\code {\xeatspaces {C-c C-x C-d}}}{73}
+\entry {\code {\xeatspaces {C-c C-x C-e}}}{73, 77}
+\entry {\code {C-c C-x C-i}}{72}
+\entry {\code {\xeatspaces {C-c C-x C-j}}}{73}
+\entry {\code {\xeatspaces {C-c C-x C-k}}}{70}
+\entry {\code {C-c C-x C-l}}{122}
+\entry {\code {\xeatspaces {C-c C-x C-n}}}{38}
+\entry {\code {\xeatspaces {C-c C-x C-o}}}{73}
+\entry {\code {\xeatspaces {C-c C-x C-p}}}{38}
+\entry {\code {\xeatspaces {C-c C-x C-r}}}{74}
+\entry {\code {\xeatspaces {C-c C-x C-s}}}{88}
+\entry {\code {C-c C-x C-s}}{105}
+\entry {\code {\xeatspaces {C-c C-x C-t}}}{68}
+\entry {\code {\xeatspaces {C-c C-x C-u}}}{64, 74, 196}
+\entry {\code {C-c C-x C-v}}{37}
+\entry {\code {C-c C-x C-w}}{8, 19}
+\entry {\code {\xeatspaces {C-c C-x C-x}}}{73}
+\entry {\code {C-c C-x C-y}}{8, 19}
+\entry {\code {\xeatspaces {C-c C-x e}}}{77}
+\entry {\code {C-c C-x f}}{15}
+\entry {\code {\xeatspaces {C-c C-x g}}}{86}
+\entry {\code {\xeatspaces {C-c C-x G}}}{86}
+\entry {\code {\xeatspaces {C-c C-x i}}}{64}
+\entry {\code {C-c C-x M-w}}{8, 19}
+\entry {\code {\xeatspaces {C-c C-x o}}}{45, 52}
+\entry {\code {\xeatspaces {C-c C-x p}}}{58}
+\entry {\code {C-c C-x p}}{159}
+\entry {\code {\xeatspaces {C-c C-y}}}{67, 73}
+\entry {\code {C-c C-z}}{14, 106}
+\entry {\code {\xeatspaces {C-c l}}}{35}
+\entry {\code {C-c l}}{119}
+\entry {\code {C-c \key {RET}}}{18}
+\entry {\code {C-k}}{105}
+\entry {\code {C-\key {RET}}}{7}
+\entry {\code {C-S-\key {left}}}{43, 105}
+\entry {\code {C-S-\key {RET}}}{8}
+\entry {\code {C-S-\key {right}}}{43, 105}
+\entry {\code {\xeatspaces {C-S-\key {up/down}}}}{73}
+\entry {\code {\xeatspaces {C-\kbd {TAB}}}}{89}
+\entry {\code {C-u C-c !}}{66}
+\entry {\code {C-u C-c *}}{29}
+\entry {\code {C-u C-c .}}{66}
+\entry {\code {\xeatspaces {C-u C-c =}}}{26}
+\entry {\code {C-u C-c =}}{27}
+\entry {\code {\xeatspaces {C-u C-c c}}}{81}
+\entry {\code {C-u C-c C-c}}{29}
+\entry {\code {\xeatspaces {C-u C-c C-l}}}{36}
+\entry {\code {C-u C-c C-t}}{41}
+\entry {\code {\xeatspaces {C-u C-c C-w}}}{87}
+\entry {\code {C-u C-c C-x ,}}{78}
+\entry {\code {\xeatspaces {C-u C-c C-x a}}}{89}
+\entry {\code {\xeatspaces {C-u C-c C-x C-s}}}{88}
+\entry {\code {\xeatspaces {C-u C-c C-x C-u}}}{64, 74, 196}
+\entry {\code {\xeatspaces {C-u C-u C-c *}}}{29}
+\entry {\code {C-u C-u C-c =}}{27}
+\entry {\code {\xeatspaces {C-u C-u C-c c}}}{81}
+\entry {\code {\xeatspaces {C-u C-u C-c C-c}}}{29}
+\entry {\code {C-u C-u C-c C-e}}{126}
+\entry {\code {C-u C-u C-c C-t}}{43}
+\entry {\code {\xeatspaces {C-u C-u C-c C-w}}}{87}
+\entry {\code {\xeatspaces {C-u C-u C-u C-c C-t}}}{45}
+\entry {\code {\xeatspaces {C-u C-u C-u \key {TAB}}}}{6}
+\entry {\code {\xeatspaces {C-u C-u \key {TAB}}}}{6}
+\entry {\code {C-up}}{174}
+\entry {\code {C-v}}{68}
+\entry {\code {\xeatspaces {C-x C-s}}}{28, 103}
+\entry {\code {\xeatspaces {C-x C-w}}}{108, 112}
+\entry {\code {\xeatspaces {C-x n b}}}{9}
+\entry {\code {\xeatspaces {C-x n s}}}{9}
+\entry {\code {\xeatspaces {C-x n w}}}{9}
+\entry {\code {C-y}}{8}
+\initial {D}
+\entry {\code {d}}{101}
+\entry {\code {D}}{102}
+\initial {E}
+\entry {\code {e}}{62}
+\entry {\code {E}}{102}
+\initial {F}
+\entry {\code {f}}{101}
+\entry {\code {F}}{101}
+\initial {G}
+\entry {\code {g}}{62}
+\entry {\code {\xeatspaces {g}}}{103}
+\entry {\code {G}}{102}
+\initial {H}
+\entry {\code {\xeatspaces {H}}}{108}
+\initial {I}
+\entry {\code {\xeatspaces {i}}}{108}
+\entry {\code {I}}{106}
+\initial {J}
+\entry {\code {j}}{101}
+\entry {\code {J}}{101}
+\entry {\code {\xeatspaces {J}}}{107}
+\initial {K}
+\entry {\code {k}}{106}
+\entry {\code {k a}}{70}
+\entry {\code {k s}}{70}
+\initial {L}
+\entry {\code {l}}{102}
+\entry {\code {L}}{100}
+\initial {M}
+\entry {\code {\xeatspaces {m}}}{107}
+\entry {\code {\xeatspaces {M}}}{108}
+\entry {\code {M-a}}{18}
+\entry {\code {M-\key {down}}}{13, 18}
+\entry {\code {\xeatspaces {M-\key {down}}}}{28}
+\entry {\code {M-down}}{174}
+\entry {\code {M-e}}{18}
+\entry {\code {\xeatspaces {M-g M-n}}}{10}
+\entry {\code {\xeatspaces {M-g M-p}}}{10}
+\entry {\code {\xeatspaces {M-g n}}}{10}
+\entry {\code {\xeatspaces {M-g p}}}{10}
+\entry {\code {M-\key {left}}}{8, 13, 18}
+\entry {\code {M-\key {RET}}}{7}
+\entry {\code {\xeatspaces {M-\key {RET}}}}{12}
+\entry {\code {M-\key {RET}}}{19}
+\entry {\code {\xeatspaces {M-\key {RET}}}}{78}
+\entry {\code {M-\key {right}}}{8, 13, 18}
+\entry {\code {M-S-\key {down}}}{8, 18}
+\entry {\code {\xeatspaces {M-S-\key {down}}}}{28}
+\entry {\code {M-S-\key {left}}}{8, 13, 18, 68}
+\entry {\code {M-S-\key {RET}}}{8, 12}
+\entry {\code {\xeatspaces {M-S-\key {RET}}}}{52}
+\entry {\code {M-S-\key {right}}}{8, 13, 18, 68}
+\entry {\code {M-S-\key {up}}}{8, 18}
+\entry {\code {\xeatspaces {M-S-\key {up}}}}{28}
+\entry {\code {\xeatspaces {M-\key {TAB}}}}{28}
+\entry {\code {M-\key {TAB}}}{44, 53}
+\entry {\code {\xeatspaces {M-\key {TAB}}}}{58}
+\entry {\code {M-\key {TAB}}}{176}
+\entry {\code {M-\key {up}}}{13, 18}
+\entry {\code {\xeatspaces {M-\key {up}}}}{28}
+\entry {\code {M-v}}{68}
+\entry {\code {M-x org-iswitchb}}{91}
+\entry {\code {mouse-1}}{16, 37, 68}
+\entry {\code {mouse-2}}{16, 37, 100}
+\entry {\code {mouse-3}}{37, 100}
+\initial {N}
+\entry {\code {n}}{62, 100}
+\initial {O}
+\entry {\code {o}}{101}
+\entry {\code {O}}{106}
+\initial {P}
+\entry {\code {p}}{62, 100}
+\entry {\code {P}}{105}
+\initial {Q}
+\entry {\code {q}}{62}
+\entry {\code {\xeatspaces {q}}}{109}
+\initial {R}
+\entry {\code {r}}{62, 94, 102}
+\entry {\code {R}}{102}
+\entry {\code {\key {RET}}}{18, 37, 55, 68, 100}
+\initial {S}
+\entry {\code {\xeatspaces {s}}}{103}
+\entry {\code {\xeatspaces {S}}}{108}
+\entry {\code {S-\key {down}}}{13, 28}
+\entry {\code {\xeatspaces {S-\key {down}}}}{49}
+\entry {\code {S-\key {down}}}{66, 68, 106}
+\entry {\code {S-\key {left}}}{14, 28, 41, 43}
+\entry {\code {\xeatspaces {S-\key {left}}}}{58}
+\entry {\code {S-\key {left}}}{62, 66, 68}
+\entry {\code {\xeatspaces {S-\key {left}}}}{74}
+\entry {\code {S-\key {left}}}{106}
+\entry {\code {\xeatspaces {S-M-\key {left}}}}{63}
+\entry {\code {\xeatspaces {S-M-\key {RET}}}}{42}
+\entry {\code {\xeatspaces {S-M-\key {right}}}}{63}
+\entry {\code {S-\key {RET}}}{19}
+\entry {\code {S-\key {right}}}{14, 28, 41, 43}
+\entry {\code {\xeatspaces {S-\key {right}}}}{58}
+\entry {\code {S-\key {right}}}{62, 66, 68}
+\entry {\code {\xeatspaces {S-\key {right}}}}{74}
+\entry {\code {S-\key {right}}}{106}
+\entry {\code {\xeatspaces {S-\key {TAB}}}}{6}
+\entry {\code {S-\key {TAB}}}{18}
+\entry {\code {S-\key {up}}}{28}
+\entry {\code {\xeatspaces {S-\key {up}}}}{49}
+\entry {\code {S-\key {up}}}{66, 68, 105}
+\entry {\code {\key {SPC}}}{55, 100}
+\initial {T}
+\entry {\code {t}}{105}
+\entry {\code {T}}{105}
+\entry {\code {\key {TAB}}}{5, 8}
+\entry {\code {\xeatspaces {\key {TAB}}}}{12, 28}
+\entry {\code {\key {TAB}}}{55, 100, 123}
+\initial {U}
+\entry {\code {\xeatspaces {u}}}{107}
+\entry {\code {\xeatspaces {U}}}{107}
+\initial {V}
+\entry {\code {\xeatspaces {v}}}{63}
+\entry {\code {v [}}{102}
+\entry {\code {v a}}{102}
+\entry {\code {v A}}{102}
+\entry {\code {v c}}{102}
+\entry {\code {v d}}{101}
+\entry {\code {v E}}{102}
+\entry {\code {v l}}{102}
+\entry {\code {v L}}{102}
+\entry {\code {v m}}{101}
+\entry {\code {v R}}{102}
+\entry {\code {v SPC}}{101}
+\entry {\code {v w}}{101}
+\entry {\code {v y}}{101}
+\initial {W}
+\entry {\code {w}}{101}
+\initial {X}
+\entry {\code {\xeatspaces {x}}}{109}
+\entry {\code {\xeatspaces {X}}}{107}
+\initial {Z}
+\entry {\code {z}}{106}

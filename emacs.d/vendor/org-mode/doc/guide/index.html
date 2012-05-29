@@ -1,0 +1,315 @@
+<html lang="en">
+<head>
+<title>The compact Org-mode Guide</title>
+<meta http-equiv="Content-Type" content="text/html">
+<meta name="description" content="The compact Org-mode Guide">
+<meta name="generator" content="makeinfo 4.11">
+<link title="Top" rel="start" href="#Top">
+<link href="http://www.gnu.org/software/texinfo/" rel="generator-home" title="Texinfo Homepage">
+<!--
+Copyright (C) 2010 Free Software Foundation
+
+     Permission is granted to copy, distribute and/or modify this
+     document under the terms of the GNU Free Documentation License,
+     Version 1.3 or any later version published by the Free Software
+     Foundation; with no Invariant Sections, with the Front-Cover texts
+     being "A GNU Manual," and with the Back-Cover Texts as in (a)
+     below.  A copy of the license is included in the section entitled
+     "GNU Free Documentation License."
+
+     (a) The FSF's Back-Cover Text is: "You have the freedom to copy and
+     modify this GNU manual.  Buying copies from the FSF supports it in
+     developing GNU and promoting software freedom."
+
+     This document is part of a collection distributed under the GNU
+     Free Documentation License.  If you want to distribute this
+     document separately from the collection, you can do so by adding a
+     copy of the license to the document, as described in section 6 of
+     the license.
+   -->
+<meta http-equiv="Content-Style-Type" content="text/css">
+</style><link rel="stylesheet" href="http://orgmode.org/org.css" type="text/css" />
+<script type="text/javascript" src="http://orgmode.org/org-keys.js"></script>
+<script type="text/javascript">
+  <!--/*--><![CDATA[/*><!--*/
+   OrgKeyReader.registerHref('h', 'index.html');
+   OrgKeyReader.registerHref('t', 'index.html');
+  /*]]>*/-->
+</script>
+
+<style type="text/css"><!--
+  pre.display { font-family:inherit }
+  pre.format  { font-family:inherit }
+  pre.smalldisplay { font-family:inherit; font-size:smaller }
+  pre.smallformat  { font-family:inherit; font-size:smaller }
+  pre.smallexample { font-size:smaller }
+  pre.smalllisp    { font-size:smaller }
+  span.sc    { font-variant:small-caps }
+  span.roman { font-family:serif; font-weight:normal; } 
+  span.sansserif { font-family:sans-serif; font-weight:normal; } 
+--></style>
+</head>
+<body onload="OrgKeyReader.init();">
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a name="toc_Top" href="index.html#Top">Org Mode Compact Guide</a>
+<li><a name="toc_Introduction" href="Introduction.html#Introduction">1 Introduction</a>
+<li><a name="toc_Document-Structure" href="Document-Structure.html#Document-Structure">2 Document Structure</a>
+<li><a name="toc_Tables" href="Tables.html#Tables">3 Tables</a>
+<li><a name="toc_Hyperlinks" href="Hyperlinks.html#Hyperlinks">4 Hyperlinks</a>
+<li><a name="toc_TODO-Items" href="TODO-Items.html#TODO-Items">5 TODO Items</a>
+<li><a name="toc_Tags" href="Tags.html#Tags">6 Tags</a>
+<li><a name="toc_Properties" href="Properties.html#Properties">7 Properties</a>
+<li><a name="toc_Dates-and-Times" href="Dates-and-Times.html#Dates-and-Times">8 Dates and Times</a>
+<li><a name="toc_Capture" href="Capture-_002d-Refile-_002d-Archive.html#Capture-_002d-Refile-_002d-Archive">9 Capture-Refile-Archive</a>
+<li><a name="toc_Agenda-Views" href="Agenda-Views.html#Agenda-Views">10 Agenda Views</a>
+<li><a name="toc_Markup" href="Markup.html#Markup">11 Markup</a>
+<li><a name="toc_Exporting" href="Exporting.html#Exporting">12 Exporting</a>
+<li><a name="toc_Publishing" href="Publishing.html#Publishing">13 Publishing</a>
+<li><a name="toc_Working-With-Source-Code" href="Working-With-Source-Code.html#Working-With-Source-Code">14 Source code</a>
+<li><a name="toc_Miscellaneous" href="Miscellaneous.html#Miscellaneous">15 Miscellaneous</a>
+</li></ul>
+</div>
+</div>
+</div>
+
+<h1 class="settitle">The compact Org-mode Guide</h1>
+   <div class="shortcontents">
+<h2>Short Contents</h2>
+<ul>
+<a href="index.html#Top">Org Mode Guide</a>
+<a href="Introduction.html#Introduction">1 Introduction</a>
+<a href="Document-Structure.html#Document-Structure">2 Document Structure</a>
+<a href="Tables.html#Tables">3 Tables</a>
+<a href="Hyperlinks.html#Hyperlinks">4 Hyperlinks</a>
+<a href="TODO-Items.html#TODO-Items">5 TODO Items</a>
+<a href="Tags.html#Tags">6 Tags</a>
+<a href="Properties.html#Properties">7 Properties</a>
+<a href="Dates-and-Times.html#Dates-and-Times">8 Dates and Times</a>
+<a href="Capture-_002d-Refile-_002d-Archive.html#Capture-_002d-Refile-_002d-Archive">9 Capture - Refile - Archive</a>
+<a href="Agenda-Views.html#Agenda-Views">10 Agenda Views</a>
+<a href="Markup.html#Markup">11 Markup for rich export</a>
+<a href="Exporting.html#Exporting">12 Exporting</a>
+<a href="Publishing.html#Publishing">13 Publishing</a>
+<a href="Working-With-Source-Code.html#Working-With-Source-Code">14 Working with source code</a>
+<a href="Miscellaneous.html#Miscellaneous">15 Miscellaneous</a>
+</ul>
+</div>
+
+
+
+<div class="node">
+<p>
+<a name="Top"></a>
+Next:&nbsp;<a rel="next" accesskey="n" href="Introduction.html#Introduction">Introduction</a>,
+Previous:&nbsp;<a rel="previous" accesskey="p" href="../index.html#dir">(dir)</a>,
+Up:&nbsp;<a rel="up" accesskey="u" href="../index.html#dir">(dir)</a>
+<hr>
+</div>
+
+<h2 class="unnumbered">Org Mode Guide</h2>
+
+<p>Copyright &copy; 2010 Free Software Foundation
+
+   <blockquote>
+Permission is granted to copy, distribute and/or modify this document
+under the terms of the GNU Free Documentation License, Version 1.3 or
+any later version published by the Free Software Foundation; with no
+Invariant Sections, with the Front-Cover texts being &ldquo;A GNU Manual,&rdquo;
+and with the Back-Cover Texts as in (a) below.  A copy of the license
+is included in the section entitled &ldquo;GNU Free Documentation License.&rdquo;
+
+        <p>(a) The FSF's Back-Cover Text is: &ldquo;You have the freedom to copy and
+modify this GNU manual.  Buying copies from the FSF supports it in
+developing GNU and promoting software freedom.&rdquo;
+
+        <p>This document is part of a collection distributed under the GNU Free
+Documentation License.  If you want to distribute this document
+separately from the collection, you can do so by adding a copy of the
+license to the document, as described in section 6 of the license. 
+</blockquote>
+
+<ul class="menu">
+<li><a accesskey="1" href="Introduction.html#Introduction">Introduction</a>: 		Getting started
+<li><a accesskey="2" href="Document-Structure.html#Document-Structure">Document Structure</a>: 		A tree works like your brain
+<li><a accesskey="3" href="Tables.html#Tables">Tables</a>: 			Pure magic for quick formatting
+<li><a accesskey="4" href="Hyperlinks.html#Hyperlinks">Hyperlinks</a>: 			Notes in context
+<li><a accesskey="5" href="TODO-Items.html#TODO-Items">TODO Items</a>: 			Every tree branch can be a TODO item
+<li><a accesskey="6" href="Tags.html#Tags">Tags</a>: 			Tagging headlines and matching sets of tags
+<li><a accesskey="7" href="Properties.html#Properties">Properties</a>: 			Properties
+<li><a accesskey="8" href="Dates-and-Times.html#Dates-and-Times">Dates and Times</a>: 		Making items useful for planning
+<li><a accesskey="9" href="Capture-_002d-Refile-_002d-Archive.html#Capture-_002d-Refile-_002d-Archive">Capture - Refile - Archive</a>: 	The ins and outs for projects
+<li><a href="Agenda-Views.html#Agenda-Views">Agenda Views</a>: 		Collecting information into views
+<li><a href="Markup.html#Markup">Markup</a>: 			Prepare text for rich export
+<li><a href="Exporting.html#Exporting">Exporting</a>: 			Sharing and publishing of notes
+<li><a href="Publishing.html#Publishing">Publishing</a>: 			Create a web site of linked Org files
+<li><a href="Working-With-Source-Code.html#Working-With-Source-Code">Working With Source Code</a>: 	Source code snippets embedded in Org
+<li><a href="Miscellaneous.html#Miscellaneous">Miscellaneous</a>: 		All the rest which did not fit elsewhere
+
+</li></ul>
+<p>--- The Detailed Node Listing ---
+
+<p>Introduction
+
+</p>
+<ul class="menu">
+<li><a href="Preface.html#Preface">Preface</a>: 			Welcome
+<li><a href="Installation.html#Installation">Installation</a>: 		How to install a downloaded version of Org
+<li><a href="Activation.html#Activation">Activation</a>: 			How to activate Org for certain buffers
+<li><a href="Feedback.html#Feedback">Feedback</a>: 			Bug reports, ideas, patches etc.
+
+</li></ul>
+<p>Document Structure
+
+</p>
+<ul class="menu">
+<li><a href="Outlines.html#Outlines">Outlines</a>: 			Org is based on Outline mode
+<li><a href="Headlines.html#Headlines">Headlines</a>: 			How to typeset Org tree headlines
+<li><a href="Visibility-cycling.html#Visibility-cycling">Visibility cycling</a>: 		Show and hide, much simplified
+<li><a href="Motion.html#Motion">Motion</a>: 			Jumping to other headlines
+<li><a href="Structure-editing.html#Structure-editing">Structure editing</a>: 		Changing sequence and level of headlines
+<li><a href="Sparse-trees.html#Sparse-trees">Sparse trees</a>: 		Matches embedded in context
+<li><a href="Plain-lists.html#Plain-lists">Plain lists</a>: 			Additional structure within an entry
+<li><a href="Footnotes.html#Footnotes">Footnotes</a>: 			How footnotes are defined in Org's syntax
+
+</li></ul>
+<p>Hyperlinks
+
+</p>
+<ul class="menu">
+<li><a href="Link-format.html#Link-format">Link format</a>: 			How links in Org are formatted
+<li><a href="Internal-links.html#Internal-links">Internal links</a>: 		Links to other places in the current file
+<li><a href="External-links.html#External-links">External links</a>: 		URL-like links to the world
+<li><a href="Handling-links.html#Handling-links">Handling links</a>: 		Creating, inserting and following
+<li><a href="Targeted-links.html#Targeted-links">Targeted links</a>: 		Point at a location in a file
+
+</li></ul>
+<p>TODO Items
+
+</p>
+<ul class="menu">
+<li><a href="Using-TODO-states.html#Using-TODO-states">Using TODO states</a>: 		Setting and switching states
+<li><a href="Multi_002dstate-workflows.html#Multi_002dstate-workflows">Multi-state workflows</a>: 	More than just on/off
+<li><a href="Progress-logging.html#Progress-logging">Progress logging</a>: 		Dates and notes for progress
+<li><a href="Priorities.html#Priorities">Priorities</a>: 			Some things are more important than others
+<li><a href="Breaking-down-tasks.html#Breaking-down-tasks">Breaking down tasks</a>: 		Splitting a task into manageable pieces
+<li><a href="Checkboxes.html#Checkboxes">Checkboxes</a>: 			Tick-off lists
+
+</li></ul>
+<p>Progress logging
+
+</p>
+<ul class="menu">
+<li><a href="Closing-items.html#Closing-items">Closing items</a>: 		When was this entry marked DONE? 
+<li><a href="Tracking-TODO-state-changes.html#Tracking-TODO-state-changes">Tracking TODO state changes</a>: 	 When did the status change?
+
+</li></ul>
+<p>Tags
+
+</p>
+<ul class="menu">
+<li><a href="Tag-inheritance.html#Tag-inheritance">Tag inheritance</a>: 		Tags use the tree structure of the outline
+<li><a href="Setting-tags.html#Setting-tags">Setting tags</a>: 		How to assign tags to a headline
+<li><a href="Tag-searches.html#Tag-searches">Tag searches</a>: 		Searching for combinations of tags
+
+</li></ul>
+<p>Dates and Times
+
+</p>
+<ul class="menu">
+<li><a href="Timestamps.html#Timestamps">Timestamps</a>: 			Assigning a time to a tree entry
+<li><a href="Creating-timestamps.html#Creating-timestamps">Creating timestamps</a>: 		Commands which insert timestamps
+<li><a href="Deadlines-and-scheduling.html#Deadlines-and-scheduling">Deadlines and scheduling</a>: 	Planning your work
+<li><a href="Clocking-work-time.html#Clocking-work-time">Clocking work time</a>: 		Tracking how long you spend on a task
+
+</li></ul>
+<p>Capture - Refile - Archive
+
+</p>
+<ul class="menu">
+<li><a href="Capture.html#Capture">Capture</a>
+<li><a href="Refiling-notes.html#Refiling-notes">Refiling notes</a>: 		Moving a tree from one place to another
+<li><a href="Archiving.html#Archiving">Archiving</a>: 			What to do with finished projects
+
+</li></ul>
+<p>Capture
+
+</p>
+<ul class="menu">
+<li><a href="Setting-up-a-capture-location.html#Setting-up-a-capture-location">Setting up a capture location</a>:   Where notes will be stored
+<li><a href="Using-capture.html#Using-capture">Using capture</a>: 		Commands to invoke and terminate capture
+<li><a href="Capture-templates.html#Capture-templates">Capture templates</a>: 		Define the outline of different note types
+
+</li></ul>
+<p>Agenda Views
+
+</p>
+<ul class="menu">
+<li><a href="Agenda-files.html#Agenda-files">Agenda files</a>: 		Files being searched for agenda information
+<li><a href="Agenda-dispatcher.html#Agenda-dispatcher">Agenda dispatcher</a>: 		Keyboard access to agenda views
+<li><a href="Built_002din-agenda-views.html#Built_002din-agenda-views">Built-in agenda views</a>: 	What is available out of the box? 
+<li><a href="Agenda-commands.html#Agenda-commands">Agenda commands</a>: 		Remote editing of Org trees
+<li><a href="Custom-agenda-views.html#Custom-agenda-views">Custom agenda views</a>: 		Defining special searches and views
+
+</li></ul>
+<p>The built-in agenda views
+
+</p>
+<ul class="menu">
+<li><a href="Weekly_002fdaily-agenda.html#Weekly_002fdaily-agenda">Weekly/daily agenda</a>: 		The calendar page with current tasks
+<li><a href="Global-TODO-list.html#Global-TODO-list">Global TODO list</a>: 		All unfinished action items
+<li><a href="Matching-tags-and-properties.html#Matching-tags-and-properties">Matching tags and properties</a>:   Structured information with fine-tuned search
+<li><a href="Timeline.html#Timeline">Timeline</a>: 			Time-sorted view for single file
+<li><a href="Search-view.html#Search-view">Search view</a>: 			Find entries by searching for text
+
+</li></ul>
+<p>Markup for rich export
+
+</p>
+<ul class="menu">
+<li><a href="Structural-markup-elements.html#Structural-markup-elements">Structural markup elements</a>: 	The basic structure as seen by the exporter
+<li><a href="Images-and-tables.html#Images-and-tables">Images and tables</a>: 		Tables and Images will be included
+<li><a href="Literal-examples.html#Literal-examples">Literal examples</a>: 		Source code examples with special formatting
+<li><a href="Include-files.html#Include-files">Include files</a>: 		Include additional files into a document
+<li><a href="Embedded-LaTeX.html#Embedded-LaTeX">Embedded LaTeX</a>: 		LaTeX can be freely used inside Org documents
+
+</li></ul>
+<p>Structural markup elements
+
+</p>
+<ul class="menu">
+<li><a href="Document-title.html#Document-title">Document title</a>: 		Where the title is taken from
+<li><a href="Headings-and-sections.html#Headings-and-sections">Headings and sections</a>: 	The document structure as seen by the exporter
+<li><a href="Table-of-contents.html#Table-of-contents">Table of contents</a>: 		The if and where of the table of contents
+<li><a href="Paragraphs.html#Paragraphs">Paragraphs</a>: 			Paragraphs
+<li><a href="Emphasis-and-monospace.html#Emphasis-and-monospace">Emphasis and monospace</a>: 	Bold, italic, etc. 
+<li><a href="Comment-lines.html#Comment-lines">Comment lines</a>: 		What will *not* be exported
+
+</li></ul>
+<p>Exporting
+
+</p>
+<ul class="menu">
+<li><a href="Export-options.html#Export-options">Export options</a>: 		Per-file export settings
+<li><a href="The-export-dispatcher.html#The-export-dispatcher">The export dispatcher</a>: 	How to access exporter commands
+<li><a href="ASCII_002fLatin_002d1_002fUTF_002d8-export.html#ASCII_002fLatin_002d1_002fUTF_002d8-export">ASCII/Latin-1/UTF-8 export</a>: 	Exporting to flat files with encoding
+<li><a href="HTML-export.html#HTML-export">HTML export</a>: 			Exporting to HTML
+<li><a href="LaTeX-and-PDF-export.html#LaTeX-and-PDF-export">LaTeX and PDF export</a>: 	Exporting to LaTeX, and processing to PDF
+<li><a href="DocBook-export.html#DocBook-export">DocBook export</a>: 		Exporting to DocBook
+<li><a href="iCalendar-export.html#iCalendar-export">iCalendar export</a>
+
+</li></ul>
+<p>Miscellaneous
+
+</p>
+<ul class="menu">
+<li><a href="Completion.html#Completion">Completion</a>: 			M-TAB knows what you need
+<li><a href="Clean-view.html#Clean-view">Clean view</a>: 			Getting rid of leading stars in the outline
+<li><a href="MobileOrg.html#MobileOrg">MobileOrg</a>: 			Org-mode on the iPhone
+
+   </ul>
+
+   </body></html>
+

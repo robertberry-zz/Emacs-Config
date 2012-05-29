@@ -1,0 +1,15 @@
+# -*- mode: snippet -*-
+# name: privhas
+# --
+
+has "$1" => (
+    is => "ro",
+    isa => "$2",
+    lazy => 1,
+    init_arg => undef,
+    builder => "_build_$1"
+);
+
+method _build_$1 () {
+    $0
+}

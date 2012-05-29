@@ -1,0 +1,197 @@
+<html lang="en">
+<head>
+<title>Working With Source Code - The compact Org-mode Guide</title>
+<meta http-equiv="Content-Type" content="text/html">
+<meta name="description" content="The compact Org-mode Guide">
+<meta name="generator" content="makeinfo 4.11">
+<link title="Top" rel="start" href="index.html#Top">
+<link rel="prev" href="Publishing.html#Publishing" title="Publishing">
+<link rel="next" href="Miscellaneous.html#Miscellaneous" title="Miscellaneous">
+<link href="http://www.gnu.org/software/texinfo/" rel="generator-home" title="Texinfo Homepage">
+<!--
+Copyright (C) 2010 Free Software Foundation
+
+     Permission is granted to copy, distribute and/or modify this
+     document under the terms of the GNU Free Documentation License,
+     Version 1.3 or any later version published by the Free Software
+     Foundation; with no Invariant Sections, with the Front-Cover texts
+     being ``A GNU Manual,'' and with the Back-Cover Texts as in (a)
+     below.  A copy of the license is included in the section entitled
+     ``GNU Free Documentation License.''
+
+     (a) The FSF's Back-Cover Text is: ``You have the freedom to copy
+     and modify this GNU manual.  Buying copies from the FSF supports
+     it in developing GNU and promoting software freedom.''
+
+     This document is part of a collection distributed under the GNU
+     Free Documentation License.  If you want to distribute this
+     document separately from the collection, you can do so by adding a
+     copy of the license to the document, as described in section 6 of
+     the license.
+   -->
+<meta http-equiv="Content-Style-Type" content="text/css">
+</style><link rel="stylesheet" href="http://orgmode.org/org.css" type="text/css" />
+<script type="text/javascript" src="http://orgmode.org/org-keys.js"></script>
+<script type="text/javascript">
+  <!--/*--><![CDATA[/*><!--*/
+   OrgKeyReader.registerHref('h', 'index.html');
+   OrgKeyReader.registerHref('t', 'index.html');
+  /*]]>*/-->
+</script>
+
+<style type="text/css"><!--
+  pre.display { font-family:inherit }
+  pre.format  { font-family:inherit }
+  pre.smalldisplay { font-family:inherit; font-size:smaller }
+  pre.smallformat  { font-family:inherit; font-size:smaller }
+  pre.smallexample { font-size:smaller }
+  pre.smalllisp    { font-size:smaller }
+  span.sc    { font-variant:small-caps }
+  span.roman { font-family:serif; font-weight:normal; } 
+  span.sansserif { font-family:sans-serif; font-weight:normal; } 
+--></style>
+</head>
+<body onload="OrgKeyReader.init();">
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a name="toc_Top" href="index.html#Top">Org Mode Compact Guide</a>
+<li><a name="toc_Introduction" href="Introduction.html#Introduction">1 Introduction</a>
+<li><a name="toc_Document-Structure" href="Document-Structure.html#Document-Structure">2 Document Structure</a>
+<li><a name="toc_Tables" href="Tables.html#Tables">3 Tables</a>
+<li><a name="toc_Hyperlinks" href="Hyperlinks.html#Hyperlinks">4 Hyperlinks</a>
+<li><a name="toc_TODO-Items" href="TODO-Items.html#TODO-Items">5 TODO Items</a>
+<li><a name="toc_Tags" href="Tags.html#Tags">6 Tags</a>
+<li><a name="toc_Properties" href="Properties.html#Properties">7 Properties</a>
+<li><a name="toc_Dates-and-Times" href="Dates-and-Times.html#Dates-and-Times">8 Dates and Times</a>
+<li><a name="toc_Capture" href="Capture-_002d-Refile-_002d-Archive.html#Capture-_002d-Refile-_002d-Archive">9 Capture-Refile-Archive</a>
+<li><a name="toc_Agenda-Views" href="Agenda-Views.html#Agenda-Views">10 Agenda Views</a>
+<li><a name="toc_Markup" href="Markup.html#Markup">11 Markup</a>
+<li><a name="toc_Exporting" href="Exporting.html#Exporting">12 Exporting</a>
+<li><a name="toc_Publishing" href="Publishing.html#Publishing">13 Publishing</a>
+<li><a name="toc_Working-With-Source-Code" href="Working-With-Source-Code.html#Working-With-Source-Code">14 Source code</a>
+<li><a name="toc_Miscellaneous" href="Miscellaneous.html#Miscellaneous">15 Miscellaneous</a>
+</li></ul>
+</div>
+</div>
+</div>
+
+<div class="node">
+<p>
+<a name="Working-With-Source-Code"></a>
+Next:&nbsp;<a rel="next" accesskey="n" href="Miscellaneous.html#Miscellaneous">Miscellaneous</a>,
+Previous:&nbsp;<a rel="previous" accesskey="p" href="Publishing.html#Publishing">Publishing</a>,
+Up:&nbsp;<a rel="up" accesskey="u" href="index.html#Top">Top</a>
+<hr>
+</div>
+
+<h2 class="chapter">14 Working with source code</h2>
+
+<p>Org-mode provides a number of features for working with source code,
+including editing of code blocks in their native major-mode, evaluation of
+code blocks, tangling of code blocks, and exporting code blocks and their
+results in several formats.
+
+<h4 class="subheading">Structure of Code Blocks</h4>
+
+<p>The structure of code blocks is as follows:
+
+<pre class="example">     #+srcname: &lt;name&gt;
+     #+begin_src &lt;language&gt; &lt;switches&gt; &lt;header arguments&gt;
+       &lt;body&gt;
+     #+end_src
+</pre>
+   <p>Where <code>&lt;name&gt;</code> is a string used to name the code block,
+<code>&lt;language&gt;</code> specifies the language of the code block
+(e.g. <code>emacs-lisp</code>, <code>shell</code>, <code>R</code>, <code>python</code>, etc...),
+<code>&lt;switches&gt;</code> can be used to control export of the code block,
+<code>&lt;header arguments&gt;</code> can be used to control many aspects of code block
+behavior as demonstrated below, and <code>&lt;body&gt;</code> contains the actual source
+code.
+
+<h4 class="subheading">Editing source code</h4>
+
+<p>Use <kbd>C-c '</kbd> to edit the current code block.  This brings up a language
+major-mode edit buffer containing the body of the code block.  Saving this
+buffer will write the new contents back to the Org buffer.  Use <kbd>C-c '</kbd>
+again to exit the edit buffer.
+
+<h4 class="subheading">Evaluating code blocks</h4>
+
+<p>Use <kbd>C-c C-c</kbd> to evaluate the current code block and insert its results
+in the Org-mode buffer.  By default, evaluation is only turned on for
+<code>emacs-lisp</code> code blocks, however support exists for evaluating blocks
+in many languages.  For a complete list of supported languages see the
+manual.  The following shows a code block and its results.
+
+<pre class="example">     #+begin_src emacs-lisp
+       (+ 1 2 3 4)
+     #+end_src
+     
+     #+results:
+     : 10
+</pre>
+   <h4 class="subheading">Extracting source code</h4>
+
+<p>Use <kbd>C-c C-v t</kbd> to create pure source code files by extracting code from
+source blocks in the current buffer.  This is referred to as &ldquo;tangling&rdquo;&mdash;a
+term adopted from the literate programming community.  During &ldquo;tangling&rdquo; of
+code blocks their bodies are expanded using <code>org-babel-expand-src-block</code>
+which can expand both variable and &ldquo;noweb&rdquo; style references.  In order to
+tangle a code block it must have a <code>:tangle</code> header argument, see the
+manual for details.
+
+<h4 class="subheading">Library of Babel</h4>
+
+<p>Use <kbd>C-c C-v l</kbd> to load the code blocks from an Org-mode files into the
+&ldquo;Library of Babel&rdquo;, these blocks can then be evaluated from any Org-mode
+buffer.  A collection of generally useful code blocks is distributed with
+Org-mode in <code>contrib/library-of-babel.org</code>.
+
+<h4 class="subheading">Header Arguments</h4>
+
+<p>Many aspects of the evaluation and export of code blocks are controlled
+through header arguments.  These can be specified globally, at the file
+level, at the outline subtree level, and at the individual code block level. 
+The following describes some of the header arguments.
+     <dl>
+<dt><code>:var</code><dd>The <code>:var</code> header argument is used to pass arguments to code blocks. 
+The values passed to arguments can be literal values, values from org-mode
+tables and literal example blocks, or the results of other named code blocks. 
+<br><dt><code>:results</code><dd>The <code>:results</code> header argument controls the <em>collection</em>,
+<em>type</em>, and <em>handling</em> of code block results.  Values of
+<code>output</code> or <code>value</code> (the default) specify how results are collected
+from a code block's evaluation.  Values of <code>vector</code>, <code>scalar</code>
+<code>file</code> <code>raw</code> <code>html</code> <code>latex</code> and <code>code</code> specify the
+type of the results of the code block which dictates how they will be
+incorporated into the Org-mode buffer.  Values of <code>silent</code>,
+<code>replace</code>, <code>prepend</code>, and <code>append</code> specify handling of code
+block results, specifically if and how the results should be inserted into
+the Org-mode buffer. 
+<br><dt><code>:session</code><dd>A header argument of <code>:session</code> will cause the code block to be
+evaluated in a persistent interactive inferior process in Emacs.  This allows
+for persisting state between code block evaluations, and for manual
+inspection of the results of evaluation. 
+<br><dt><code>:exports</code><dd>Any combination of the <em>code</em> or the <em>results</em> of a block can be
+retained on export, this is specified by setting the <code>:results</code> header
+argument to <code>code</code> <code>results</code> <code>none</code> or <code>both</code>. 
+<br><dt><code>:tangle</code><dd>A header argument of <code>:tangle yes</code> will cause a code block's contents to
+be tangled to a file named after the filename of the Org-mode buffer.  An
+alternate file name can be specified with <code>:tangle filename</code>. 
+<br><dt><code>:cache</code><dd>A header argument of <code>:cache yes</code> will cause associate a hash of the
+expanded code block with the results, ensuring that code blocks are only
+re-run when their inputs have changed. 
+<br><dt><code>:noweb</code><dd>A header argument of <code>:noweb yes</code> will expand &ldquo;noweb&rdquo; style references
+on evaluation and tangling. 
+<br><dt><code>:file</code><dd>Code blocks which output results to files (e.g. graphs, diagrams and figures)
+can accept a <code>:file filename</code> header argument in which case the results
+are saved to the named file, and a link to the file is inserted into the
+Org-mode buffer. 
+</dl>
+
+<p class="noindent"><b>Further reading</b><br><a href="http://orgmode.org/manual/Literal-examples.html#Literal-examples">Chapter 11.3 of the manual</a><br>
+<a href="http://orgmode.org/worg/org-contrib/babel/index.php">The Babel site on Worg</a>
+
+   </body></html>
+

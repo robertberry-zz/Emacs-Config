@@ -1,0 +1,130 @@
+<html lang="en">
+<head>
+<title>Capture templates - The compact Org-mode Guide</title>
+<meta http-equiv="Content-Type" content="text/html">
+<meta name="description" content="The compact Org-mode Guide">
+<meta name="generator" content="makeinfo 4.11">
+<link title="Top" rel="start" href="index.html#Top">
+<link rel="up" href="Capture.html#Capture" title="Capture">
+<link rel="prev" href="Using-capture.html#Using-capture" title="Using capture">
+<link href="http://www.gnu.org/software/texinfo/" rel="generator-home" title="Texinfo Homepage">
+<!--
+Copyright (C) 2010 Free Software Foundation
+
+     Permission is granted to copy, distribute and/or modify this
+     document under the terms of the GNU Free Documentation License,
+     Version 1.3 or any later version published by the Free Software
+     Foundation; with no Invariant Sections, with the Front-Cover texts
+     being ``A GNU Manual,'' and with the Back-Cover Texts as in (a)
+     below.  A copy of the license is included in the section entitled
+     ``GNU Free Documentation License.''
+
+     (a) The FSF's Back-Cover Text is: ``You have the freedom to copy
+     and modify this GNU manual.  Buying copies from the FSF supports
+     it in developing GNU and promoting software freedom.''
+
+     This document is part of a collection distributed under the GNU
+     Free Documentation License.  If you want to distribute this
+     document separately from the collection, you can do so by adding a
+     copy of the license to the document, as described in section 6 of
+     the license.
+   -->
+<meta http-equiv="Content-Style-Type" content="text/css">
+</style><link rel="stylesheet" href="http://orgmode.org/org.css" type="text/css" />
+<script type="text/javascript" src="http://orgmode.org/org-keys.js"></script>
+<script type="text/javascript">
+  <!--/*--><![CDATA[/*><!--*/
+   OrgKeyReader.registerHref('h', 'index.html');
+   OrgKeyReader.registerHref('t', 'index.html');
+  /*]]>*/-->
+</script>
+
+<style type="text/css"><!--
+  pre.display { font-family:inherit }
+  pre.format  { font-family:inherit }
+  pre.smalldisplay { font-family:inherit; font-size:smaller }
+  pre.smallformat  { font-family:inherit; font-size:smaller }
+  pre.smallexample { font-size:smaller }
+  pre.smalllisp    { font-size:smaller }
+  span.sc    { font-variant:small-caps }
+  span.roman { font-family:serif; font-weight:normal; } 
+  span.sansserif { font-family:sans-serif; font-weight:normal; } 
+--></style>
+</head>
+<body onload="OrgKeyReader.init();">
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a name="toc_Top" href="index.html#Top">Org Mode Compact Guide</a>
+<li><a name="toc_Introduction" href="Introduction.html#Introduction">1 Introduction</a>
+<li><a name="toc_Document-Structure" href="Document-Structure.html#Document-Structure">2 Document Structure</a>
+<li><a name="toc_Tables" href="Tables.html#Tables">3 Tables</a>
+<li><a name="toc_Hyperlinks" href="Hyperlinks.html#Hyperlinks">4 Hyperlinks</a>
+<li><a name="toc_TODO-Items" href="TODO-Items.html#TODO-Items">5 TODO Items</a>
+<li><a name="toc_Tags" href="Tags.html#Tags">6 Tags</a>
+<li><a name="toc_Properties" href="Properties.html#Properties">7 Properties</a>
+<li><a name="toc_Dates-and-Times" href="Dates-and-Times.html#Dates-and-Times">8 Dates and Times</a>
+<li><a name="toc_Capture" href="Capture-_002d-Refile-_002d-Archive.html#Capture-_002d-Refile-_002d-Archive">9 Capture-Refile-Archive</a>
+<li><a name="toc_Agenda-Views" href="Agenda-Views.html#Agenda-Views">10 Agenda Views</a>
+<li><a name="toc_Markup" href="Markup.html#Markup">11 Markup</a>
+<li><a name="toc_Exporting" href="Exporting.html#Exporting">12 Exporting</a>
+<li><a name="toc_Publishing" href="Publishing.html#Publishing">13 Publishing</a>
+<li><a name="toc_Working-With-Source-Code" href="Working-With-Source-Code.html#Working-With-Source-Code">14 Source code</a>
+<li><a name="toc_Miscellaneous" href="Miscellaneous.html#Miscellaneous">15 Miscellaneous</a>
+</li></ul>
+</div>
+</div>
+</div>
+
+<div class="node">
+<p>
+<a name="Capture-templates"></a>
+Previous:&nbsp;<a rel="previous" accesskey="p" href="Using-capture.html#Using-capture">Using capture</a>,
+Up:&nbsp;<a rel="up" accesskey="u" href="Capture.html#Capture">Capture</a>
+<hr>
+</div>
+
+<h4 class="unnumberedsubsec">Capture templates</h4>
+
+<p>You can use templates to generate different types of capture notes, and to
+store them in different places.  For example, if you would like
+to store new tasks under a heading &lsquo;<samp><span class="samp">Tasks</span></samp>&rsquo; in file <samp><span class="file">TODO.org</span></samp>, and
+journal entries in a date tree in <samp><span class="file">journal.org</span></samp> you could
+use:
+
+<pre class="smallexample">     (setq org-capture-templates
+      '(("t" "Todo" entry (file+headline "~/org/gtd.org" "Tasks")
+             "* TODO %?\n  %i\n  %a")
+        ("j" "Journal" entry (file+datetree "~/org/journal.org")
+             "* %?\nEntered on %U\n  %i\n  %a")))
+</pre>
+   <p class="noindent">In these entries, the first string is the key to reach the
+template, the second is a short description.  Then follows the type of the
+entry and a definition of the target location for storing the note.  Finally,
+the template itself, a string with %-escapes to fill in information based on
+time and context.
+
+   <p>When you call <kbd>M-x org-capture</kbd>, Org will prompt for a key to select the
+template (if you have more than one template) and then prepare the buffer like
+<pre class="smallexample">     * TODO
+       [[file:<var>link to where you were when initiating capture</var>]]
+</pre>
+   <p class="noindent">During expansion of the template, special <kbd>%</kbd>-escapes<a rel="footnote" href="#fn-1" name="fnd-1"><sup>1</sup></a>
+allow dynamic insertion of content.  Here is a small selection of the
+possibilities, consult the manual for more.
+<pre class="smallexample">     %a          <span class="roman">annotation, normally the link created with </span><code>org-store-link</code>
+     %i          <span class="roman">initial content, the region when remember is called with C-u.</span>
+     %t          <span class="roman">timestamp, date only</span>
+     %T          <span class="roman">timestamp with date and time</span>
+     %u, %U      <span class="roman">like the above, but inactive timestamps</span>
+</pre>
+   <div class="footnote">
+<hr>
+<h4>Footnotes</h4><p class="footnote"><small>[<a name="fn-1" href="#fnd-1">1</a>]</small> If you
+need one of these sequences literally, escape the <kbd>%</kbd> with a backslash.</p>
+
+   <hr></div>
+
+   </body></html>
+

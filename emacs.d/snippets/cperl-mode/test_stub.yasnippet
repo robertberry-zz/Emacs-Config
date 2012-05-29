@@ -1,0 +1,15 @@
+# -*- mode: snippet -*-
+# name: test_stub
+# --
+
+use Test::More;
+
+BEGIN { use_ok('${1:`(condition-case nil
+                         (rjb-cperl-test-package-name (buffer-file-name))
+                       (error nil))`}'); }
+
+require_ok('$1');
+
+$0
+
+done_testing;
